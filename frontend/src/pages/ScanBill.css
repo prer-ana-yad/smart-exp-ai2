@@ -1,0 +1,140 @@
+.upload-btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 25px;
+  background: linear-gradient(135deg,#4a6bff,#9f6bff);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.upload-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(74,107,255,0.6);
+}
+.scan-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg,#0f1d2d,#142a45);
+  padding: 20px;
+  color: white;
+}
+
+.scan-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.scan-card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+}
+.upload-btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 25px;
+  background: linear-gradient(135deg,#4a6bff,#9f6bff);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.preview-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.loading {
+  margin-top: 15px;
+  color: #9f6bff;
+}
+
+.scanner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.scanner-box {
+  border: 3px solid #4a6bff;
+  width: 80%;
+  height: 60%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: scanAnim 2s infinite;
+}
+
+@keyframes scanAnim {
+  0% { box-shadow: 0 0 10px #4a6bff; }
+  50% { box-shadow: 0 0 25px #9f6bff; }
+  100% { box-shadow: 0 0 10px #4a6bff; }
+}
+
+
+
+
+.camera-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 2000;
+}
+
+.camera-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scan-frame {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  height: 50%;
+  border: 3px solid white;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+.capture-btn {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: white;
+  border: 6px solid #4a6bff;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  font-size: 20px;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 50%;
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ExpensIQ</string>
+    <string name="title_activity_main">ExpensIQ</string>
+    <string name="package_name">com.prerna.expensiq</string>
+    <string name="custom_url_scheme">com.prerna.expensiq</string>
+</resources>

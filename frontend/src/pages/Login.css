@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #020617);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 260px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.toggle {
+  display: flex;
+  background: #1e293b;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.toggle button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.toggle .active {
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  background: #1e293b;
+  color: white;
+}
+
+.main-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.divider {
+  margin: 15px 0;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  background: #ea4335;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.switch-text {
+  margin-top: 15px;
+  text-align: center;
+  color: #bbb;
+  font-size: 14px;
+}
+
+.switch-text span {
+  color: #6c63ff;
+  cursor: pointer;
+  font-weight: 600;
+}
